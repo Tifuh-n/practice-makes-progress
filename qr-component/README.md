@@ -25,7 +25,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Links
 
 - Solution URL: [Github folder](https://github.com/Tifuh-n/practice-makes-progress/tree/main/qr-component)
-- Live Site URL: [qr-component on Vercel](https://qr-component-392o621qp-tifuh.vercel.app)
+- Live Site URL: [qr-component on Vercel](https://practice-makes-progress.vercel.app/qr-component/index.html)
 
 ## My process
 

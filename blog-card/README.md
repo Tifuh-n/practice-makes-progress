@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
  
 - Solution URL: [Github repo](https://github.com/Tifuh-n/practice-makes-progress/tree/main/blog-card)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [blog card live site](https://practice-makes-progress.vercel.app/blog-card/index.html)
 
 
 ## My process
