@@ -29,8 +29,8 @@ Users should be able to:
  
 ### Links
  
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github repo](https://github.com/Tifuh-n/practice-makes-progress/tree/main/social-links)
+- Live Site URL: [Live site](https://practice-makes-progress-8csaidolj-tifuh.vercel.app/social-links/index.html)
 ---
  
 ## My process
