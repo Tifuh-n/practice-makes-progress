@@ -1,0 +1,313 @@
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+    --bg: #FAFAF7;
+    --ink: #0D1117;
+    --ink-soft: #4B5563;
+    --yellow: #F5C518;
+    --yellow-pale: #FEF3C7;
+    --white: #FFFFFF;
+    --border: #D1D5DB;
+    --shadow-color: #0D1117;
+    }
+
+    body {
+    font-family: 'Figtree', sans-serif;
+    background-color: var(--bg);
+    color: var(--ink);
+    min-height: 100vh;
+    }
+
+    /* ── NAV ── */
+    nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 2rem;
+    border-bottom: 1.5px solid var(--border);
+    background: var(--bg);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    }
+
+    .nav-logo {
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    text-decoration: none;
+    }
+
+    .nav-logo span {
+    display: inline-block;
+    background: var(--yellow);
+    color: var(--ink);
+    padding: 0.1em 0.35em;
+    border-radius: 4px;
+    margin-left: 0.15em;
+    }
+
+    .nav-link {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+    transition: border-color 0.15s;
+    }
+    .nav-link:hover { border-color: var(--yellow); }
+
+    /* ── HERO ── */
+    .hero {
+    padding: 5rem 2rem 4rem;
+    max-width: 800px;
+    margin: 0 auto;
+    }
+
+    .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 1.5rem;
+    }
+
+    .hero-eyebrow::before {
+    content: '';
+    display: block;
+    width: 28px;
+    height: 2px;
+    background: var(--yellow);
+    }
+
+    .hero h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+    margin-bottom: 1.25rem;
+    }
+
+    .hero h1 em {
+    font-style: normal;
+    background: var(--yellow);
+    padding: 0 0.15em;
+    }
+
+    .hero p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--ink-soft);
+    max-width: 520px;
+    margin-bottom: 2rem;
+    }
+
+    .hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: var(--ink);
+    text-decoration: none;
+    background: var(--yellow);
+    border: 2px solid var(--ink);
+    padding: 0.65em 1.25em;
+    border-radius: 8px;
+    box-shadow: 4px 4px 0 var(--ink);
+    transition: transform 0.1s, box-shadow 0.1s;
+    }
+
+    .hero-cta:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 var(--ink);
+    }
+
+    .hero-cta:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 var(--ink);
+    }
+
+    /* ── PROJECTS ── */
+    .projects-section {
+    padding: 1rem 2rem 6rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    }
+
+    .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1.5px solid var(--border);
+    }
+
+    .section-header h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    }
+
+    .project-count {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--ink-soft);
+    background: var(--yellow-pale);
+    border: 1.5px solid #D97706;
+    padding: 0.15em 0.6em;
+    border-radius: 20px;
+    }
+
+    .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 420px), 1fr));
+    gap: 2rem;
+    }
+
+    /* ── CARD ── */
+    .card {
+    background: var(--white);
+    border: 2px solid var(--ink);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 6px 6px 0 var(--ink);
+    transition: transform 0.15s, box-shadow 0.15s;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .card:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 9px 9px 0 var(--ink);
+    }
+
+    .card-thumbnail {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #E5E7EB;
+    border-bottom: 2px solid var(--ink);
+    }
+
+    .card-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    }
+
+    .card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    }
+
+    .card-level {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 0.5rem;
+    }
+
+    .card-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: 0.6rem;
+    line-height: 1.2;
+    }
+
+    .card-desc {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    margin-bottom: 1.25rem;
+    flex: 1;
+    }
+
+    .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1.5rem;
+    }
+
+    .tag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--ink);
+    background: var(--yellow-pale);
+    border: 1.5px solid #D97706;
+    padding: 0.2em 0.65em;
+    border-radius: 4px;
+    }
+
+    .card-links {
+    display: flex;
+    gap: 0.75rem;
+    border-top: 1.5px solid var(--border);
+    padding-top: 1.25rem;
+    }
+
+    .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    border: 1.5px solid var(--ink);
+    transition: background 0.1s, color 0.1s;
+    }
+
+    .btn-primary {
+    background: var(--ink);
+    color: var(--white);
+    }
+    .btn-primary:hover { background: #1e293b; }
+
+    .btn-ghost {
+    background: transparent;
+    color: var(--ink);
+    }
+    .btn-ghost:hover { background: var(--yellow-pale); }
+
+    .btn svg { flex-shrink: 0; }
+
+    /* ── FOOTER ── */
+    footer {
+    border-top: 1.5px solid var(--border);
+    padding: 2rem;
+    text-align: center;
+    font-size: 0.8125rem;
+    color: var(--ink-soft);
+    }
+
+    footer a {
+    color: var(--ink);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid var(--yellow);
+    }
+
+    @media (max-width: 600px) {
+    nav { padding: 1rem 1.25rem; }
+    .hero { padding: 3rem 1.25rem 2.5rem; }
+    .projects-section { padding: 0.5rem 1.25rem 4rem; }
+    }
