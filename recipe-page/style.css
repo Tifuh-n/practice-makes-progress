@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: hsl(30, 10%, 34%);
+}
+
+p {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.recipe-title {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:hsl(24, 5%, 18%);
+    margin: 10px 0;
+}
+
+.recipe-description {
+    margin: 10px 0 20px 0;
+}
+
+
+
+.recipe-card {
+    border-radius: 15px;
+    margin: 90px auto 60px auto;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    max-width: 50%;
+    
+}
+.recipe-image{
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.recipe-img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.prep-section {
+    background-color: hsl(330, 100%, 98%);
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: auto;
+
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.prep-title {
+    color: hsl(330, 100%, 20%);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    margin: 8px auto;
+}
+
+.prep-list {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.prep-list li, .ingredients-list li, .instructions-list li {
+    margin-bottom: 8px;
+}
+
+.ingredients, .instructions, .nutrition {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+.ingredients-title, .instructions-title, .nutrition-title {
+    color: hsl(330, 100%, 20%);
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 10px 8px;
+}
+
+.ingredients-list, .instructions-list {
+    padding-left: 25px;
+    margin: 10px 0 25px 0;
+}
+
+.instructions-list li::marker {
+    color: hsl(330, 100%, 20%);
+    font-weight: bold;
+    
+}
+
+hr{
+    border: 1px solid hsl(30, 18%, 87%);
+}
+
+.nutrition-description {
+    margin: 10px 0 20px 10px;
+}
+
+.nutrition-table {
+    width: 100%;
+    margin: 10px;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    height: 40px;
+    
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+td {
+    color: hsl(330, 100%, 20%);
+    font-weight: 700;
+}
+
+
+.attribution {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(330, 100%, 20%);
+}
